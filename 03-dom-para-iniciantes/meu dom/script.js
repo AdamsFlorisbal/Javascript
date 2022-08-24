@@ -1,15 +1,25 @@
-// Retorne o url da página atual utilizando o objeto window
-const hrefPagina = window.location.href;
-console.log(hrefPagina);
+// Retorne no console todas as imagens do site
+const img = document.querySelectorAll('img');
 
-// Seleciona o primeiro elemento da página que
-// possua a classe ativo
-const elementoAtivo = document.querySelector('.ativo');
+console.log(img)
 
-// Retorne a linguagem do navegador
-const linguagem = window.navigator.language;
-console.log(linguagem);
+// Retorne no console apenas as imagens que começaram com a palavra imagem
+const animais = document.querySelectorAll('img[src^="img/imagem"]');
 
-// Retorne a largura da janela 
-const windowWidth = window.innerWidth;
-console.log(windowWidth);
+console.log(animais)
+// Selecione todos os links internos (onde o href começa com #)
+
+const link = document.querySelectorAll('a[href^="#"]');
+
+console.log(link)
+
+// Selecione o primeiro h2 dentro de .animais-descricao
+const hDois = document.querySelector('.animais-descricao h2');
+
+console.log(hDois)
+
+// Selecione o último p do site
+
+const paragrafos = document.querySelectorAll('p')
+
+console.log(paragrafos[paragrafos.length - 1])
